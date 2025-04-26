@@ -4,7 +4,8 @@ public class Prime{
 public static void main(String[] args){
 
 Scanner user = new Scanner(System.in);
-boolean checker = false;
+
+boolean confirmation = false;
 
 System.out.print("Enter a number : ");
 int num = user.nextInt();
@@ -17,7 +18,8 @@ int count = 2;
 while( count <= num / 2){
  
 	if (num % count == 0){
-	checker = true;
+	confirmation = true;
+
 	break;
 
 	}
@@ -25,12 +27,9 @@ while( count <= num / 2){
 
 }
 
-if (!checker){
-System.out.println(num + " is a prime number." +!checker);
-} 
 
-
-
+if (!confirmation)
+System.out.println(num + " is a prime number.");
 
 }
 }
