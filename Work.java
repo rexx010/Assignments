@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Nokia3310_2{
+public class Work{
 
 static Scanner input = new Scanner(System.in);
 //-----------------------------------------------------------------------------------------------------------------------------
@@ -102,9 +102,6 @@ public static void phonebook(){
 
 	switch(select){
 	case 0: phonebook();
-
-	default: break;
-
 	}
 	break;
 
@@ -121,8 +118,6 @@ public static void phonebook(){
 
 	switch(select){
 	case 0: phonebook();
-
-	default: break;
 	}
 
 	break;
@@ -140,8 +135,6 @@ public static void phonebook(){
 
 	switch(select){
 	case 0: phonebook();
-
-	default: break;
 	}
 
 	break;
@@ -159,8 +152,6 @@ public static void phonebook(){
 
 	switch(select){
 	case 0: phonebook();
-
-	default: break;
 	}
 
 
@@ -179,8 +170,6 @@ public static void phonebook(){
 
 	switch(select){
 	case 0: phonebook();
-
-	default: break;
 	}
 
 
@@ -199,8 +188,6 @@ public static void phonebook(){
 
 	switch(select){
 	case 0: phonebook();
-
-	default: break;
 	}
 
 
@@ -219,8 +206,6 @@ public static void phonebook(){
 
 	switch(select){
 	case 0: phonebook();
-
-	default: break;
 	}
 
 
@@ -253,8 +238,6 @@ public static void phonebook(){
 
 		switch(select){
 		case 0: phonebook();
-
-		default: break;
 		}
 
 
@@ -273,16 +256,12 @@ public static void phonebook(){
 
 		switch(select){
 		case 0: phonebook();
-
-		default: break;
 		}
 
 
 	   	break;
 
 		case 0: phonebook();
-
-		default: break;
 	   	}
 	break;
 
@@ -299,8 +278,6 @@ public static void phonebook(){
 
 	switch(select){
 	case 0: phonebook();
-
-	default: break;
 	}
 
 
@@ -319,8 +296,6 @@ public static void phonebook(){
 
 	switch(select){
 	case 0: phonebook();
-
-	default: break;
 	}
 
 
@@ -329,7 +304,6 @@ public static void phonebook(){
 	case 0:
 	menu();
 	
-	default: break;
  break;
 }
 }
@@ -375,7 +349,6 @@ public static void messages(){
 
 	switch(select){
 	case 0: messages();
-	default: break;
 	}
 
 	break;
@@ -393,8 +366,6 @@ public static void messages(){
 
 	switch(select){
 	case 0: messages();
-
-	default: break;
 	}
 
 
@@ -413,8 +384,6 @@ public static void messages(){
 
 	switch(select){
 	case 0: messages();
-
-	default: break;
 	}
 
 
@@ -433,8 +402,6 @@ public static void messages(){
 
 	switch(select){
 	case 0: messages();
-
-	default: break;
 	}
 
 
@@ -453,8 +420,6 @@ public static void messages(){
 
 	switch(select){
 	case 0: messages();
-
-	default: break;
 	}
 
 
@@ -473,8 +438,6 @@ public static void messages(){
 
 	switch(select){
 	case 0: messages();
-
-	default: break;
 	}
 
 
@@ -524,8 +487,6 @@ public static void messages(){
 
 					switch(select){
 					case 0: messages();
-
-					default: break;
 					}
 
 
@@ -544,8 +505,6 @@ public static void messages(){
 
 					switch(select){
 					case 0: messages();
-
-					default: break;
 					}
 
 
@@ -564,14 +523,10 @@ public static void messages(){
 
 					switch(select){
 					case 0: messages();
-
-					default: break;
 					}
 
 					case 0: messages();
 					break;
-
-					default: break;
 				}
 			break;
 
@@ -604,8 +559,6 @@ public static void messages(){
 
 					switch(select){
 					case 0: messages();
-
-					default: break;
 					}
 
 
@@ -624,8 +577,6 @@ public static void messages(){
 
 					switch(select){
 					case 0: messages();
-
-					default: break;
 					}
 
 
@@ -644,8 +595,6 @@ public static void messages(){
 	
 					switch(select){
 					case 0: messages();
-
-					default: break;
 					}
 
 
@@ -654,8 +603,6 @@ public static void messages(){
 			break;
 			
 			case 0: messages();
-
-			default: break;
 		}
 	break;
 	
@@ -672,8 +619,6 @@ public static void messages(){
 
 	switch(select){
 	case 0: messages();
-
-	default: break;
 	}
 
 
@@ -692,8 +637,6 @@ public static void messages(){
 
 	switch(select){
 	case 0: messages();
-
-	default: break;
 	}
 
 
@@ -712,8 +655,6 @@ public static void messages(){
 
 	switch(select){
 	case 0: messages();
-
-	default: break;
 	}
 
 
@@ -721,12 +662,10 @@ public static void messages(){
 	
 	case 0:
 	menu();
-
-	default: break;
 	break;
 	}
 
-	
+
 }
 
 //-----------------------------------------------------------------------------------------------------------------------------------------
@@ -746,8 +685,6 @@ public static void chat(){
 	switch(select){
 	case 0:
 	menu();
-
-	default: break;
  break;
 	}
 
