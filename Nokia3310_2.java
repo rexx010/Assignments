@@ -19,6 +19,7 @@ int select = input.nextInt();
 switch(select){
 case 1:
 menu();
+
 }
 }
 //-----------------------------------------------------------------------------------------------------------------------------
@@ -41,7 +42,7 @@ String menuMessage = """
 11: Clock
 12: Profiles
 13: SIM service
-
+0: Exit
 """;
 System.out.println(menuMessage);
 
@@ -49,19 +50,20 @@ System.out.println(menuMessage);
  int select = input.nextInt();
 
  switch (select) {
- case 1: phonebook();
- case 2: messages();
- case 3: chat();
- case 4: callRegister();
- case 5: tone();
- case 6: settings();
- case 7: callDivert();
- case 8: games();
- case 9: calculator();
- case 10: remainders();
- case 11: clock();
- case 12: profiles();
- case 13: simService();
+ case 1: phonebook(); break;
+ case 2: messages(); break;
+ case 3: chat(); break;
+ case 4: callRegister(); break;
+ case 5: tone(); break;
+ case 6: settings(); break;
+ case 7: callDivert(); break;
+ case 8: games(); break;
+ case 9: calculator(); break;
+ case 10: remainders(); break;
+ case 11: clock(); break;
+ case 12: profiles(); break;
+ case 13: simService(); break;
+ case 0: break;
  }
 }
 
@@ -86,9 +88,9 @@ public static void phonebook(){
 
 	""";
 	System.out.println(message);
-	int select = input.nextInt();
+	int selectPhonebook = input.nextInt();
 
-	switch(select){
+	switch(selectPhonebook){
 
 	case 1:System.out.println("Welcome to Search");
 	message = """
@@ -98,9 +100,9 @@ public static void phonebook(){
 
 	""";
 	System.out.println(message);
-	select = input.nextInt();
+	selectPhonebook = input.nextInt();
 
-	switch(select){
+	switch(selectPhonebook){
 	case 0: phonebook();
 
 	default: break;
@@ -117,9 +119,9 @@ public static void phonebook(){
 
 	""";
 	System.out.println(message);
-	select = input.nextInt();
+	selectPhonebook = input.nextInt();
 
-	switch(select){
+	switch(selectPhonebook){
 	case 0: phonebook();
 
 	default: break;
@@ -136,9 +138,9 @@ public static void phonebook(){
 
 	""";
 	System.out.println(message);
-	select = input.nextInt();
+	selectPhonebook = input.nextInt();
 
-	switch(select){
+	switch(selectPhonebook){
 	case 0: phonebook();
 
 	default: break;
@@ -155,9 +157,9 @@ public static void phonebook(){
 
 	""";
 	System.out.println(message);
-	select = input.nextInt();
+	selectPhonebook = input.nextInt();
 
-	switch(select){
+	switch(selectPhonebook){
 	case 0: phonebook();
 
 	default: break;
@@ -175,9 +177,9 @@ public static void phonebook(){
 
 	""";
 	System.out.println(message);
-	select = input.nextInt();
+	selectPhonebook = input.nextInt();
 
-	switch(select){
+	switch(selectPhonebook){
 	case 0: phonebook();
 
 	default: break;
@@ -195,9 +197,9 @@ public static void phonebook(){
 
 	""";
 	System.out.println(message);
-	select = input.nextInt();
+	selectPhonebook = input.nextInt();
 
-	switch(select){
+	switch(selectPhonebook){
 	case 0: phonebook();
 
 	default: break;
@@ -215,9 +217,9 @@ public static void phonebook(){
 
 	""";
 	System.out.println(message);
-	select = input.nextInt();
+	selectPhonebook = input.nextInt();
 
-	switch(select){
+	switch(selectPhonebook){
 	case 0: phonebook();
 
 	default: break;
@@ -237,9 +239,9 @@ public static void phonebook(){
 		0: Return to phonebook
 	   	""";
 	   	System.out.println(message);
-	   	select = input.nextInt();
+	   	selectPhonebook = input.nextInt();
 	
-	   	switch(select){
+	   	switch(selectPhonebook){
 	   	case 1:
  	   	System.out.println("Welcome to Type of view");
 		message = """
@@ -249,9 +251,9 @@ public static void phonebook(){
 
 		""";
 		System.out.println(message);
-		select = input.nextInt();
+		selectPhonebook = input.nextInt();
 
-		switch(select){
+		switch(selectPhonebook){
 		case 0: phonebook();
 
 		default: break;
@@ -269,9 +271,9 @@ public static void phonebook(){
 
 		""";
 		System.out.println(message);
-		select = input.nextInt();
+		selectPhonebook = input.nextInt();
 
-		switch(select){
+		switch(selectPhonebook){
 		case 0: phonebook();
 
 		default: break;
@@ -295,9 +297,9 @@ public static void phonebook(){
 
 	""";
 	System.out.println(message);
-	select = input.nextInt();
+	selectPhonebook = input.nextInt();
 
-	switch(select){
+	switch(selectPhonebook){
 	case 0: phonebook();
 
 	default: break;
@@ -315,22 +317,19 @@ public static void phonebook(){
 
 	""";
 	System.out.println(message);
-	select = input.nextInt();
+	selectPhonebook = input.nextInt();
 
-	switch(select){
+	switch(selectPhonebook){
 	case 0: phonebook();
 
 	default: break;
 	}
-
-
-	break;
 	
 	case 0:
 	menu();
 	
 	default: break;
- break;
+
 }
 }
 
@@ -341,7 +340,7 @@ public static void phonebook(){
 public static void messages(){
  System.out.println("Welcome to Message");
 
-	String message = """
+	String messageMessage = """
     	press a number:
 
 	1: Write message
@@ -357,23 +356,23 @@ public static void messages(){
 	0: Return to main menu
 
 	""";
-	System.out.println(message);
-	int select = input.nextInt();
+	System.out.println(messageMessage);
+	int selectMessage = input.nextInt();
 
-	switch(select){
+	switch(selectMessage){
 	
 	case 1:
  	System.out.println("Welcome to Write message");
-	message = """
+	messageMessage = """
     	press a number:
 
 	0: Return to messages
 
 	""";
-	System.out.println(message);
-	select = input.nextInt();
+	System.out.println(messageMessage);
+	selectMessage = input.nextInt();
 
-	switch(select){
+	switch(selectMessage){
 	case 0: messages();
 	default: break;
 	}
@@ -382,16 +381,16 @@ public static void messages(){
 
 	case 2:
  	System.out.println("Welcome to Inbox");
-	message = """
+	messageMessage = """
     	press a number:
 
 	0: Return to messages
 
 	""";
-	System.out.println(message);
-	select = input.nextInt();
+	System.out.println(messageMessage);
+	selectMessage = input.nextInt();
 
-	switch(select){
+	switch(selectMessage){
 	case 0: messages();
 
 	default: break;
@@ -402,16 +401,16 @@ public static void messages(){
 
 	case 3:
  	System.out.println("Welcome to Outbox");
-	message = """
+	messageMessage = """
     	press a number:
 
 	0: Return to messages
 
 	""";
-	System.out.println(message);
-	select = input.nextInt();
+	System.out.println(messageMessage);
+	selectMessage = input.nextInt();
 
-	switch(select){
+	switch(selectMessage){
 	case 0: messages();
 
 	default: break;
@@ -422,16 +421,16 @@ public static void messages(){
 
 	case 4:
  	System.out.println("Welcome to Picture message");
-	message = """
+	messageMessage = """
     	press a number:
 
 	0: Return to messages
 
 	""";
-	System.out.println(message);
-	select = input.nextInt();
+	System.out.println(messageMessage);
+	selectMessage = input.nextInt();
 
-	switch(select){
+	switch(selectMessage){
 	case 0: messages();
 
 	default: break;
@@ -442,16 +441,16 @@ public static void messages(){
 
 	case 5:
  	System.out.println("Welcome to Templates");
-	message = """
+	messageMessage = """
     	press a number:
 
 	0: Return to messages
 
 	""";
-	System.out.println(message);
-	select = input.nextInt();
+	System.out.println(messageMessage);
+	selectMessage = input.nextInt();
 
-	switch(select){
+	switch(selectMessage){
 	case 0: messages();
 
 	default: break;
@@ -462,16 +461,16 @@ public static void messages(){
 
 	case 6:
  	System.out.println("Welcome to Smileys");
-	message = """
+	messageMessage = """
     	press a number:
 
 	0: Return to messages
 
 	""";
-	System.out.println(message);
-	select = input.nextInt();
+	System.out.println(messageMessage);
+	selectMessage = input.nextInt();
 
-	switch(select){
+	switch(selectMessage){
 	case 0: messages();
 
 	default: break;
@@ -483,7 +482,7 @@ public static void messages(){
 	case 7:
  	System.out.println("Welcome to Message settings");
 
-		message = """
+		messageMessage = """
     		press a number:
 
 		1: Set 1
@@ -491,14 +490,14 @@ public static void messages(){
 		0: Return to messages
 
 		""";
-		System.out.println(message);
-		select = input.nextInt();
+		System.out.println(messageMessage);
+		selectMessage = input.nextInt();
 		
-		switch(select){
+		switch(selectMessage){
 			case 1:
  			System.out.println("Welcome to Set 1");
 
-				message = """
+				messageMessage = """
     				press a number:
 
 				1: Message centre number
@@ -506,23 +505,23 @@ public static void messages(){
 				3: Message validity
 				0: Return to messages
 				""";
-				System.out.println(message);
-				select = input.nextInt();
+				System.out.println(messageMessage);
+				selectMessage = input.nextInt();
 		
-				switch(select){
+				switch(selectMessage){
 				
 					case 1:
  					System.out.println("Welcome to Message centre number");
-					message = """
+					messageMessage = """
     					press a number:
 
 					0: Return to messages
 
 					""";
-					System.out.println(message);
-					select = input.nextInt();
+					System.out.println(messageMessage);
+					selectMessage = input.nextInt();
 
-					switch(select){
+					switch(selectMessage){
 					case 0: messages();
 
 					default: break;
@@ -533,16 +532,16 @@ public static void messages(){
 
 					case 2:
  					System.out.println("Welcome to Message sent as");
-					message = """
+					messageMessage = """
     					press a number:
 
 					0: Return to messages
 
 					""";
-					System.out.println(message);
-					select = input.nextInt();
+					System.out.println(messageMessage);
+					selectMessage = input.nextInt();
 
-					switch(select){
+					switch(selectMessage){
 					case 0: messages();
 
 					default: break;
@@ -553,16 +552,16 @@ public static void messages(){
 
 					case 3:
  					System.out.println("Welcome to Message validity");
-					message = """
+					messageMessage = """
     					press a number:
 
 					0: Return to messages
 
 					""";
-					System.out.println(message);
-					select = input.nextInt();
+					System.out.println(messageMessage);
+					selectMessage = input.nextInt();
 
-					switch(select){
+					switch(selectMessage){
 					case 0: messages();
 
 					default: break;
@@ -578,7 +577,7 @@ public static void messages(){
 			case 2:
  			System.out.println("Welcome to Common");
 			
-			message = """
+			messageMessage = """
     				press a number:
 
 				1: Delivery report
@@ -586,23 +585,23 @@ public static void messages(){
 				3: Character support
 				0: Return to message
 				""";
-				System.out.println(message);
-				select = input.nextInt();
+				System.out.println(messageMessage);
+				selectMessage = input.nextInt();
 		
-				switch(select){
+				switch(selectMessage){
 				
 					case 1:
  					System.out.println("Welcome to Delivery report");
-					message = """
+					messageMessage = """
     					press a number:
 
 					0: Return to messages
 
 					""";
-					System.out.println(message);
-					select = input.nextInt();
+					System.out.println(messageMessage);
+					selectMessage = input.nextInt();
 
-					switch(select){
+					switch(selectMessage){
 					case 0: messages();
 
 					default: break;
@@ -613,16 +612,16 @@ public static void messages(){
 
 					case 2:
  					System.out.println("Welcome to Reply via same centre");
-					message = """
+					messageMessage = """
     					press a number:
 
 					0: Return to messages
 
 					""";
-					System.out.println(message);
-					select = input.nextInt();
+					System.out.println(messageMessage);
+					selectMessage = input.nextInt();
 
-					switch(select){
+					switch(selectMessage){
 					case 0: messages();
 
 					default: break;
@@ -633,16 +632,16 @@ public static void messages(){
 
 					case 3:
  					System.out.println("Welcome to Character support");
-					message = """
+					messageMessage = """
     					press a number:
 
 					0: Return to messages
 
 					""";
-					System.out.println(message);
-					select = input.nextInt();
+					System.out.println(messageMessage);
+					selectMessage = input.nextInt();
 	
-					switch(select){
+					switch(selectMessage){
 					case 0: messages();
 
 					default: break;
@@ -661,16 +660,16 @@ public static void messages(){
 	
 	case 8:
  	System.out.println("Welcome to Info service");
-	message = """
+	messageMessage = """
     	press a number:
 
 	0: Return to messages
 
 	""";
-	System.out.println(message);
-	select = input.nextInt();
+	System.out.println(messageMessage);
+	selectMessage = input.nextInt();
 
-	switch(select){
+	switch(selectMessage){
 	case 0: messages();
 
 	default: break;
@@ -681,16 +680,16 @@ public static void messages(){
 
 	case 9:
  	System.out.println("Welcome to Voice mailbox number");
-	message = """
+	messageMessage = """
     	press a number:
 
 	0: Return to messages
 
 	""";
-	System.out.println(message);
-	select = input.nextInt();
+	System.out.println(messageMessage);
+	selectMessage = input.nextInt();
 
-	switch(select){
+	switch(selectMessage){
 	case 0: messages();
 
 	default: break;
@@ -701,29 +700,29 @@ public static void messages(){
 
 	case 10:
  	System.out.println("Welcome to Service command editor");
-	message = """
+	messageMessage = """
     	press a number:
 
 	0: Return to messages
 
 	""";
-	System.out.println(message);
-	select = input.nextInt();
+	System.out.println(messageMessage);
+	selectMessage = input.nextInt();
 
-	switch(select){
+	switch(selectMessage){
 	case 0: messages();
 
 	default: break;
 	}
 
 
-	break;
+	//break;
 	
 	case 0:
 	menu();
 
 	default: break;
-	break;
+	
 	}
 
 	
@@ -734,21 +733,21 @@ public static void messages(){
 public static void chat(){
  System.out.println("Welcome to Chat");
  
- 	String message = """
+ 	String messageChat = """
     	press a number:
 
 	0: Return to menu
 
 	""";
-	System.out.println(message);
-	int select = input.nextInt();
+	System.out.println(messageChat);
+	int selectChat = input.nextInt();
 
-	switch(select){
+	switch(selectChat){
 	case 0:
 	menu();
 
 	default: break;
- break;
+
 	}
 
 }
