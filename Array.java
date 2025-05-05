@@ -21,11 +21,11 @@ System.out.println(number[counter]+" ");
 
 System.out.println();
 
-int sum = 0;
+int total = 0;
 for(int counter = 0; counter < number.length; counter++){
-sum = sum + number[counter];
+total = total + number[counter];
 }
-System.out.println("Total is = "+sum);
+System.out.println("Total is = "+total);
 
 
 }
