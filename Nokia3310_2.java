@@ -5,7 +5,8 @@ public class Nokia3310_2{
 static Scanner input = new Scanner(System.in);
 //-----------------------------------------------------------------------------------------------------------------------------
 public static void main(String[] args){
-
+int select = 0;
+do{
 String message = """
 		--Hello user--
 	 Welcome to your phone Setup
@@ -14,16 +15,20 @@ String message = """
 """;
 System.out.println(message);
 
-int select = input.nextInt();
+select = input.nextInt();
 
 switch(select){
 case 1:
 menu();
+default: System.out.println("Invalid - Try again");
+}
+}while(select != 1);
+}
 
-}
-}
 //-----------------------------------------------------------------------------------------------------------------------------
 public static void menu(){
+ int select = 0;
+do{
 String menuMessage = """
 		--Hello user--
 	 Welcome to your phone Menu
@@ -47,7 +52,7 @@ String menuMessage = """
 System.out.println(menuMessage);
 
  Scanner input = new Scanner(System.in);
- int select = input.nextInt();
+select = input.nextInt();
 
  switch (select) {
  case 1: phonebook(); break;
@@ -64,11 +69,16 @@ System.out.println(menuMessage);
  case 12: profiles(); break;
  case 13: simService(); break;
  case 0: break;
+
+default: System.out.println("Invalid - Try again");
  }
+}while(select != 0);
 }
 
 //------------------------------------------------------------------------------------------------------------------------------------------
 public static void phonebook(){
+int selectPhonebook = 0;
+do{
  System.out.println("Welcome to Phone book");
 
 	String message = """
@@ -88,11 +98,12 @@ public static void phonebook(){
 
 	""";
 	System.out.println(message);
-	int selectPhonebook = input.nextInt();
+	selectPhonebook = input.nextInt();
 
 	switch(selectPhonebook){
 
 	case 1:System.out.println("Welcome to Search");
+do{
 	message = """
     	press a number:
 
@@ -105,12 +116,13 @@ public static void phonebook(){
 	switch(selectPhonebook){
 	case 0: phonebook();
 
-	default: break;
-
-	}
+	default: System.out.println("Invalid - Try again");
+ }
+}while(selectPhonebook != 0);
 	break;
 
 	case 2:
+do{
  	System.out.println("Welcome to Service Nos");
 	message = """
     	press a number:
@@ -124,12 +136,14 @@ public static void phonebook(){
 	switch(selectPhonebook){
 	case 0: phonebook();
 
-	default: break;
-	}
+default: System.out.println("Invalid - Try again");
+ }
+}while(selectPhonebook != 0);
 
 	break;
 
 	case 3:
+do{
  	System.out.println("Welcome to Add name");
 	message = """
     	press a number:
@@ -143,12 +157,14 @@ public static void phonebook(){
 	switch(selectPhonebook){
 	case 0: phonebook();
 
-	default: break;
-	}
+default: System.out.println("Invalid - Try again");
+ }
+}while(selectPhonebook != 0);
 
 	break;
 
 	case 4:
+do{
  	System.out.println("Welcome to Erase");
 	message = """
     	press a number:
@@ -162,13 +178,15 @@ public static void phonebook(){
 	switch(selectPhonebook){
 	case 0: phonebook();
 
-	default: break;
-	}
+default: System.out.println("Invalid - Try again");
+ }
+}while(selectPhonebook != 0);
 
 
 	break;
 
 	case 5:
+do{
  	System.out.println("Welcome to Edit");
 	message = """
     	press a number:
@@ -182,13 +200,15 @@ public static void phonebook(){
 	switch(selectPhonebook){
 	case 0: phonebook();
 
-	default: break;
-	}
+default: System.out.println("Invalid - Try again");
+ }
+}while(selectPhonebook != 0);
 
 
 	break;
 
 	case 6:
+do{
  	System.out.println("Welcome to Assign tone");
 	message = """
     	press a number:
@@ -202,13 +222,15 @@ public static void phonebook(){
 	switch(selectPhonebook){
 	case 0: phonebook();
 
-	default: break;
-	}
+default: System.out.println("Invalid - Try again");
+ }
+}while(selectPhonebook != 0);
 
 
 	break;
 
 	case 7:
+do{
  	System.out.println("Welcome to Send b'card");
 	message = """
     	press a number:
@@ -222,13 +244,15 @@ public static void phonebook(){
 	switch(selectPhonebook){
 	case 0: phonebook();
 
-	default: break;
-	}
+default: System.out.println("Invalid - Try again");
+ }
+}while(selectPhonebook != 0);
 
 
 	break;
 
 	case 8:
+do{
  	System.out.println("Welcome to Options");
 
 	   	message = """
@@ -243,6 +267,7 @@ public static void phonebook(){
 	
 	   	switch(selectPhonebook){
 	   	case 1:
+do{
  	   	System.out.println("Welcome to Type of view");
 		message = """
     		press a number:
@@ -256,13 +281,14 @@ public static void phonebook(){
 		switch(selectPhonebook){
 		case 0: phonebook();
 
-		default: break;
-		}
-
-
-	   	break;
+		default: System.out.println("Invalid - Try again");
+ }
+}while(selectPhonebook != 0);
+		
+		break;
 
 	   	case 2:
+do{
  	   	System.out.println("Welcome to Memory status");
 		message = """
     		press a number:
@@ -276,19 +302,20 @@ public static void phonebook(){
 		switch(selectPhonebook){
 		case 0: phonebook();
 
-		default: break;
-		}
-
-
-	   	break;
-
+		default: System.out.println("Invalid - Try again");
+ }
+}while(selectPhonebook != 0);
+		
+		break;
 		case 0: phonebook();
 
-		default: break;
-	   	}
+	default: System.out.println("Invalid - Try again");
+ }
+}while(selectPhonebook != 0);
 	break;
 
 	case 9:
+do{
  	System.out.println("Welcome to Speed dials");
 	message = """
     	press a number:
@@ -302,13 +329,15 @@ public static void phonebook(){
 	switch(selectPhonebook){
 	case 0: phonebook();
 
-	default: break;
-	}
+default: System.out.println("Invalid - Try again");
+ }
+}while(selectPhonebook != 0);
 
 
 	break;
 
 	case 10:
+do{
  	System.out.println("Welcome to Voice tags");
 	message = """
     	press a number:
@@ -322,15 +351,16 @@ public static void phonebook(){
 	switch(selectPhonebook){
 	case 0: phonebook();
 
-	default: break;
-	}
-	
+default: System.out.println("Invalid - Try again");
+ }
+}while(selectPhonebook != 0);
+	break;
 	case 0:
 	menu();
 	
-	default: break;
-
-}
+default: System.out.println("Invalid - Try again");
+ }
+}while(selectPhonebook != 0);
 }
 
 //---------------------------------------------------------------------------------------------------------------------------------------------
@@ -338,6 +368,8 @@ public static void phonebook(){
 
 
 public static void messages(){
+int selectMessage = 0;
+do{
  System.out.println("Welcome to Message");
 
 	String messageMessage = """
@@ -357,11 +389,12 @@ public static void messages(){
 
 	""";
 	System.out.println(messageMessage);
-	int selectMessage = input.nextInt();
+	selectMessage = input.nextInt();
 
 	switch(selectMessage){
 	
 	case 1:
+do{
  	System.out.println("Welcome to Write message");
 	messageMessage = """
     	press a number:
@@ -374,12 +407,14 @@ public static void messages(){
 
 	switch(selectMessage){
 	case 0: messages();
-	default: break;
-	}
+default: System.out.println("Invalid - Try again");
+ }
+}while(selectMessage != 0);
 
 	break;
 
 	case 2:
+do{
  	System.out.println("Welcome to Inbox");
 	messageMessage = """
     	press a number:
@@ -393,13 +428,15 @@ public static void messages(){
 	switch(selectMessage){
 	case 0: messages();
 
-	default: break;
-	}
+default: System.out.println("Invalid - Try again");
+ }
+}while(selectMessage != 0);
 
 
 	break;
 
 	case 3:
+do{
  	System.out.println("Welcome to Outbox");
 	messageMessage = """
     	press a number:
@@ -413,13 +450,15 @@ public static void messages(){
 	switch(selectMessage){
 	case 0: messages();
 
-	default: break;
-	}
+default: System.out.println("Invalid - Try again");
+ }
+}while(selectMessage != 0);
 
 
 	break;
 
 	case 4:
+do{
  	System.out.println("Welcome to Picture message");
 	messageMessage = """
     	press a number:
@@ -433,13 +472,15 @@ public static void messages(){
 	switch(selectMessage){
 	case 0: messages();
 
-	default: break;
-	}
+default: System.out.println("Invalid - Try again");
+ }
+}while(selectMessage != 0);
 
 
 	break;
 
 	case 5:
+do{
  	System.out.println("Welcome to Templates");
 	messageMessage = """
     	press a number:
@@ -453,13 +494,15 @@ public static void messages(){
 	switch(selectMessage){
 	case 0: messages();
 
-	default: break;
-	}
+default: System.out.println("Invalid - Try again");
+ }
+}while(selectMessage != 0);
 
 
 	break;
 
 	case 6:
+do{
  	System.out.println("Welcome to Smileys");
 	messageMessage = """
     	press a number:
@@ -473,13 +516,15 @@ public static void messages(){
 	switch(selectMessage){
 	case 0: messages();
 
-	default: break;
-	}
+default: System.out.println("Invalid - Try again");
+ }
+}while(selectMessage != 0);
 
 
 	break;
 
 	case 7:
+do{
  	System.out.println("Welcome to Message settings");
 
 		messageMessage = """
@@ -494,7 +539,9 @@ public static void messages(){
 		selectMessage = input.nextInt();
 		
 		switch(selectMessage){
+			
 			case 1:
+do{
  			System.out.println("Welcome to Set 1");
 
 				messageMessage = """
@@ -509,8 +556,11 @@ public static void messages(){
 				selectMessage = input.nextInt();
 		
 				switch(selectMessage){
+
+					
 				
 					case 1:
+do{
  					System.out.println("Welcome to Message centre number");
 					messageMessage = """
     					press a number:
@@ -524,13 +574,15 @@ public static void messages(){
 					switch(selectMessage){
 					case 0: messages();
 
-					default: break;
-					}
+					default: System.out.println("Invalid - Try again");
+ }
+}while(selectMessage != 0);
 
 
 					break;
 
 					case 2:
+do{
  					System.out.println("Welcome to Message sent as");
 					messageMessage = """
     					press a number:
@@ -544,13 +596,15 @@ public static void messages(){
 					switch(selectMessage){
 					case 0: messages();
 
-					default: break;
-					}
+					default: System.out.println("Invalid - Try again");
+ }
+}while(selectMessage != 0);
 
 
 					break;
 
 					case 3:
+do{
  					System.out.println("Welcome to Message validity");
 					messageMessage = """
     					press a number:
@@ -564,17 +618,21 @@ public static void messages(){
 					switch(selectMessage){
 					case 0: messages();
 
-					default: break;
-					}
+					default: System.out.println("Invalid - Try again");
+ }
+}while(selectMessage != 0);
 
 					case 0: messages();
 					break;
 
-					default: break;
-				}
+				default: System.out.println("Invalid - Try again");
+ }
+}while(selectMessage != 0);
+
 			break;
 
 			case 2:
+do{
  			System.out.println("Welcome to Common");
 			
 			messageMessage = """
@@ -591,6 +649,7 @@ public static void messages(){
 				switch(selectMessage){
 				
 					case 1:
+do{
  					System.out.println("Welcome to Delivery report");
 					messageMessage = """
     					press a number:
@@ -604,13 +663,15 @@ public static void messages(){
 					switch(selectMessage){
 					case 0: messages();
 
-					default: break;
-					}
+					default: System.out.println("Invalid - Try again");
+ }
+}while(selectMessage != 0);
 
 
 					break;
 
 					case 2:
+do{
  					System.out.println("Welcome to Reply via same centre");
 					messageMessage = """
     					press a number:
@@ -624,13 +685,15 @@ public static void messages(){
 					switch(selectMessage){
 					case 0: messages();
 
-					default: break;
-					}
+					default: System.out.println("Invalid - Try again");
+ }
+}while(selectMessage != 0);
 
 
 					break;
 
 					case 3:
+do{
  					System.out.println("Welcome to Character support");
 					messageMessage = """
     					press a number:
@@ -644,21 +707,26 @@ public static void messages(){
 					switch(selectMessage){
 					case 0: messages();
 
-					default: break;
-					}
+					default: System.out.println("Invalid - Try again");
+ }
+}while(selectMessage != 0);
 
 
 					break;
-				}
-			break;
+				default: System.out.println("Invalid - Try again");
+ }
+}while(selectMessage != 0);
 			
+break;
 			case 0: messages();
 
-			default: break;
-		}
+		default: System.out.println("Invalid - Try again");
+ }
+}while(selectMessage != 0);
 	break;
 	
 	case 8:
+do{
  	System.out.println("Welcome to Info service");
 	messageMessage = """
     	press a number:
@@ -672,13 +740,15 @@ public static void messages(){
 	switch(selectMessage){
 	case 0: messages();
 
-	default: break;
-	}
+default: System.out.println("Invalid - Try again");
+ }
+}while(selectMessage != 0);
 
 
 	break;
 
 	case 9:
+do{
  	System.out.println("Welcome to Voice mailbox number");
 	messageMessage = """
     	press a number:
@@ -692,13 +762,15 @@ public static void messages(){
 	switch(selectMessage){
 	case 0: messages();
 
-	default: break;
-	}
+default: System.out.println("Invalid - Try again");
+ }
+}while(selectMessage != 0);
 
 
 	break;
 
 	case 10:
+do{
  	System.out.println("Welcome to Service command editor");
 	messageMessage = """
     	press a number:
@@ -712,18 +784,19 @@ public static void messages(){
 	switch(selectMessage){
 	case 0: messages();
 
-	default: break;
-	}
+default: System.out.println("Invalid - Try again");
+ }
+}while(selectMessage != 0);
 
 
-	//break;
+	break;
 	
 	case 0:
 	menu();
 
-	default: break;
-	
-	}
+default: System.out.println("Invalid - Try again");
+ }
+}while(selectMessage != 0);
 
 	
 }
@@ -731,6 +804,8 @@ public static void messages(){
 //-----------------------------------------------------------------------------------------------------------------------------------------
 
 public static void chat(){
+int selectChat = 0;
+do{
  System.out.println("Welcome to Chat");
  
  	String messageChat = """
@@ -740,20 +815,22 @@ public static void chat(){
 
 	""";
 	System.out.println(messageChat);
-	int selectChat = input.nextInt();
+	selectChat = input.nextInt();
 
 	switch(selectChat){
 	case 0:
 	menu();
 
-	default: break;
-
-	}
+default: System.out.println("Invalid - Try again");
+ }
+}while(selectChat != 0);
 
 }
 
 //----------------------------------------------------------------------------------------------------------------------------
  public static void callRegister(){
+int selectcall = 0;
+do{
  System.out.println("Welcome to Call register");
 
 	String message = """
@@ -771,11 +848,12 @@ public static void chat(){
 
 	""";
 	System.out.println(message);
-	int select = input.nextInt();
+	selectcall = input.nextInt();
 
-	switch(select){
+	switch(selectcall){
 	
 	case 1:
+do{
 	System.out.println("Welcome to Missed calls");
 	message = """
     	press a number:
@@ -784,16 +862,19 @@ public static void chat(){
 
 	""";
 	System.out.println(message);
-	select = input.nextInt();
+	selectcall = input.nextInt();
 
-	switch(select){
+	switch(selectcall){
 	case 0:
 	callRegister();
-	}
 
+	default: System.out.println("Invalid - Try again");
+ }
+}while(selectcall != 0);
 	break;
-	
+
 	case 2:
+do{
 	System.out.println("Welcome to Recieving calls");
 	message = """
     	press a number:
@@ -802,17 +883,18 @@ public static void chat(){
 
 	""";
 	System.out.println(message);
-	select = input.nextInt();
+	selectcall = input.nextInt();
 
-	switch(select){
+	switch(selectcall){
 	case 0:
 	callRegister();
-	}
-
-
+	default: System.out.println("Invalid - Try again");
+ }
+}while(selectcall != 0);
 	break;
-	
+
 	case 3:
+do{
 	System.out.println("Welcome to Dialled numbers");
 	message = """
     	press a number:
@@ -821,17 +903,18 @@ public static void chat(){
 
 	""";
 	System.out.println(message);
-	select = input.nextInt();
+	selectcall = input.nextInt();
 
-	switch(select){
+	switch(selectcall){
 	case 0:
 	callRegister();
-	}
-
-
+	default: System.out.println("Invalid - Try again");
+ }
+}while(selectcall != 0);
 	break;
-	
+
 	case 4:
+do{
 	System.out.println("Welcome to Erase recent call lists");
 	message = """
     	press a number:
@@ -840,17 +923,18 @@ public static void chat(){
 
 	""";
 	System.out.println(message);
-	select = input.nextInt();
+	selectcall = input.nextInt();
 
-	switch(select){
+	switch(selectcall){
 	case 0:
 	callRegister();
-	}
-
-
+default: System.out.println("Invalid - Try again");
+ }
+}while(selectcall != 0);
 	break;
-	
+
 	case 5:
+do{
 	System.out.println("Welcome to show call duration");
 		
 			message = """
@@ -865,9 +949,9 @@ public static void chat(){
 
 			""";
 			System.out.println(message);
-			select = input.nextInt();
+			selectcall = input.nextInt();
 
-			switch(select){
+			switch(selectcall){
 			case 1:
 			System.out.println("Last call duration");
 			message = """
@@ -877,9 +961,9 @@ public static void chat(){
 
 			""";
 			System.out.println(message);
-			select = input.nextInt();
+			selectcall = input.nextInt();
 
-			switch(select){
+			switch(selectcall){
 			case 0:
 			callRegister();
 			}
@@ -896,9 +980,9 @@ public static void chat(){
 
 			""";
 			System.out.println(message);
-			select = input.nextInt();
+			selectcall = input.nextInt();
 
-			switch(select){
+			switch(selectcall){
 			case 0:
 			callRegister();
 			}
@@ -915,9 +999,9 @@ public static void chat(){
 
 			""";
 			System.out.println(message);
-			select = input.nextInt();
+			selectcall = input.nextInt();
 
-			switch(select){
+			switch(selectcall){
 			case 0:
 			callRegister();
 			}
@@ -934,9 +1018,9 @@ public static void chat(){
 
 			""";
 			System.out.println(message);
-			select = input.nextInt();
+			selectcall = input.nextInt();
 
-			switch(select){
+			switch(selectcall){
 			case 0:
 			callRegister();
 			}
@@ -953,9 +1037,9 @@ public static void chat(){
 
 			""";
 			System.out.println(message);
-			select = input.nextInt();
+			selectcall = input.nextInt();
 
-			switch(select){
+			switch(selectcall){
 			case 0:
 			callRegister();
 			}
@@ -965,12 +1049,13 @@ public static void chat(){
 
 			case 0: callRegister();
 			
-			}
-		
-
+	default: System.out.println("Invalid - Try again");
+ }
+}while(selectcall != 0);
 	break;
-	
+
 	case 6:
+do{
 	System.out.println("Welcome to Show call costs");
 
 			message = """
@@ -984,9 +1069,9 @@ public static void chat(){
 			""";
 			System.out.println(message);
 
-			select = input.nextInt();
+			selectcall = input.nextInt();
 
-			switch(select){
+			switch(selectcall){
 			case 1:
 			System.out.println("Last call cost");
 			message = """
@@ -996,9 +1081,9 @@ public static void chat(){
 
 			""";
 			System.out.println(message);
-			select = input.nextInt();
+			selectcall = input.nextInt();
 
-			switch(select){
+			switch(selectcall){
 			case 0:
 			callRegister();
 			}
@@ -1015,9 +1100,9 @@ public static void chat(){
 
 			""";
 			System.out.println(message);
-			select = input.nextInt();
+			selectcall = input.nextInt();
 
-			switch(select){
+			switch(selectcall){
 			case 0:
 			callRegister();
 			}
@@ -1034,9 +1119,9 @@ public static void chat(){
 
 			""";
 			System.out.println(message);
-			select = input.nextInt();
+			selectcall = input.nextInt();
 
-			switch(select){
+			switch(selectcall){
 			case 0:
 			callRegister();
 			}
@@ -1045,11 +1130,13 @@ public static void chat(){
 			break;
 			
 			case 0: callRegister();
-			}
-		
+default: System.out.println("Invalid - Try again");
+ }
+}while(selectcall != 0);
 	break;
-	
+
 	case 7:
+do{
 	System.out.println("Welcome to call cost settings");
 
 			message = """
@@ -1061,9 +1148,9 @@ public static void chat(){
 
 			""";
 			System.out.println(message);
-			select = input.nextInt();
+			selectcall = input.nextInt();
 
-			switch(select){
+			switch(selectcall){
 			case 1:
 			System.out.println("Call cost limit");
 			message = """
@@ -1073,9 +1160,9 @@ public static void chat(){
 
 			""";
 			System.out.println(message);
-			select = input.nextInt();
+			selectcall = input.nextInt();
 
-			switch(select){
+			switch(selectcall){
 			case 0:
 			callRegister();
 			}
@@ -1092,9 +1179,9 @@ public static void chat(){
 
 			""";
 			System.out.println(message);
-			select = input.nextInt();
+			selectcall = input.nextInt();
 
-			switch(select){
+			switch(selectcall){
 			case 0:
 			callRegister();
 			}
@@ -1103,10 +1190,13 @@ public static void chat(){
 			break;
 			
 			case 0: callRegister();
-			}
+default: System.out.println("Invalid - Try again");
+ }
+}while(selectcall != 0);
 	break;
-	
+
 	case 8:
+do{
 	System.out.println("Welcome to Prepaid credit");
 	message = """
     	press a number:
@@ -1115,27 +1205,28 @@ public static void chat(){
 
 	""";
 	System.out.println(message);
-	select = input.nextInt();
+	selectcall = input.nextInt();
 
-	switch(select){
+	switch(selectcall){
 	case 0:
 	callRegister();
-	}
-
-
-	break;
-
+default: System.out.println("Invalid - Try again");
+ }
+}while(selectcall != 0);
+	
 	case 0:
 	menu();
 	
- break;
-	}
-
+default: System.out.println("Invalid - Try again");
+ }
+}while(selectcall != 0);
 
 }
 
 //-------------------------------------------------------------------------------------------------------------------------------
  public static void tone(){
+int select = 0;
+do{
  System.out.println("Welcome to Tone");
 	String message = """
     	press a number:
@@ -1153,11 +1244,12 @@ public static void chat(){
 
 	""";
 	System.out.println(message);
-	int select = input.nextInt();
+	select = input.nextInt();
 
 	switch(select){
 	
 	case 1:
+do{
 	System.out.println("Ringing tone");
 	message = """
     	press a number:
@@ -1171,12 +1263,13 @@ public static void chat(){
 	switch(select){
 	case 0:
 	tone();
-	}
-
-
+default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 	break;
-	
+
 	case 2:
+do{
 	System.out.println("Ringing volume");
 	message = """
     	press a number:
@@ -1190,12 +1283,13 @@ public static void chat(){
 	switch(select){
 	case 0:
 	tone();
-	}
-
-
+	default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 	break;
-	
+
 	case 3:
+do{
 	System.out.println("Incoming call alert");
 	message = """
     	press a number:
@@ -1209,12 +1303,13 @@ public static void chat(){
 	switch(select){
 	case 0:
 	tone();
-	}
-
-
+default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 	break;
-	
+
 	case 4:
+do{
 	System.out.println("Composer");
 	message = """
     	press a number:
@@ -1228,12 +1323,13 @@ public static void chat(){
 	switch(select){
 	case 0:
 	tone();
-	}
-
-
+default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 	break;
 
 	case 5:
+do{
 	System.out.println("Message alert tone");
 	message = """
     	press a number:
@@ -1247,13 +1343,13 @@ public static void chat(){
 	switch(select){
 	case 0:
 	tone();
-	}
-
-
+default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 	break;
 
-	
 	case 6:
+do{
 	System.out.println("Keypad tones");
 	message = """
     	press a number:
@@ -1267,13 +1363,13 @@ public static void chat(){
 	switch(select){
 	case 0:
 	tone();
-	}
-
-
+	default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 	break;
-
 	
 	case 7:
+do{
 	System.out.println("Warning and game tones");
 	message = """
     	press a number:
@@ -1287,13 +1383,13 @@ public static void chat(){
 	switch(select){
 	case 0:
 	tone();
-	}
-
-
+default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 	break;
-
 	
 	case 8:
+do{
 	System.out.println("Viberating alert");
 	message = """
     	press a number:
@@ -1307,12 +1403,13 @@ public static void chat(){
 	switch(select){
 	case 0:
 	tone();
-	}
-
-
+default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 	break;
 
 	case 9:
+do{
 	System.out.println("Screen saver");
 	message = """
     	press a number:
@@ -1326,21 +1423,23 @@ public static void chat(){
 	switch(select){
 	case 0:
 	tone();
-	}
-
-
-	break;
+default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 
 	case 0:
 	menu();
 
- break;
-	}
+default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 
 }
 
 //---------------------------------------------------------------------------------------------------------------------------------------------
  public static void settings(){
+int select = 0;
+do{
  System.out.println("Welcome to Settings");
 
 	String message = """
@@ -1354,11 +1453,12 @@ public static void chat(){
 
 	""";
 	System.out.println(message);
-	int select = input.nextInt();
+	select = input.nextInt();
 
 	switch(select){
 	
 	case 1:
+do{
 	System.out.println("Call Settings");
 
 		message = """
@@ -1379,6 +1479,7 @@ public static void chat(){
 		switch(select){
 	
 		case 1:
+do{
 		System.out.println("Automatic redial");
 		message = """
     		press a number:
@@ -1392,10 +1493,13 @@ public static void chat(){
 		switch(select){
 		case 0:
 		settings();
-		}
+		default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 		break;
 	
 		case 2:
+do{
 		System.out.println("Speed dialing");
 		message = """
     		press a number:
@@ -1409,10 +1513,13 @@ public static void chat(){
 		switch(select){
 		case 0:
 		settings();
-		}
+		default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 		break;
 	
 		case 3:
+do{
 		System.out.println("Call waiting options");
 		message = """
     		press a number:
@@ -1426,10 +1533,13 @@ public static void chat(){
 		switch(select){
 		case 0:
 		settings();
-		}
+		default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 		break;
 	
 		case 4:
+do{
 		System.out.println("Own number sending");
 		message = """
     		press a number:
@@ -1443,10 +1553,13 @@ public static void chat(){
 		switch(select){
 		case 0:
 		settings();
-		}
+	default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 		break;
 
 		case 5:
+do{
 		System.out.println("Phone line in use");
 		message = """
     		press a number:
@@ -1460,10 +1573,13 @@ public static void chat(){
 		switch(select){
 		case 0:
 		settings();
-		}
+		default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 		break;
 
 		case 6:
+do{
 		System.out.println("Automatic answer");
 		message = """
     		press a number:
@@ -1477,15 +1593,20 @@ public static void chat(){
 		switch(select){
 		case 0:
 		settings();
-		}
+		default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 		break;
 
 		case 0: settings();
 
-		}
+	default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 	break;
-	
+
 	case 2:
+do{
 	System.out.println("Phone settings");
 
 		message = """
@@ -1505,6 +1626,7 @@ public static void chat(){
 		switch(select){
 	
 		case 1:
+do{
 		System.out.println("Language");
 		message = """
     		press a number:
@@ -1518,10 +1640,13 @@ public static void chat(){
 		switch(select){
 		case 0:
 		settings();
-		}
+	default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 		break;
 	
 		case 2:
+do{
 		System.out.println("Cell info display");
 		message = """
     		press a number:
@@ -1535,10 +1660,13 @@ public static void chat(){
 		switch(select){
 		case 0:
 		settings();
-		}
+	default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 		break;
 	
 		case 3:
+do{
 		System.out.println("Welcome note");
 		message = """
     		press a number:
@@ -1552,10 +1680,13 @@ public static void chat(){
 		switch(select){
 		case 0:
 		settings();
-		}
+	default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 		break;
 	
 		case 4:
+do{
 		System.out.println("Network selection");
 		message = """
     		press a number:
@@ -1569,10 +1700,13 @@ public static void chat(){
 		switch(select){
 		case 0:
 		settings();
-		}
+	default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 		break;
 
 		case 5:
+do{
 		System.out.println("Lights");
 		message = """
     		press a number:
@@ -1586,10 +1720,13 @@ public static void chat(){
 		switch(select){
 		case 0:
 		settings();
-		}
+	default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 		break;
 
 		case 6:
+do{
 		System.out.println("Confirm SIM service action");
 		message = """
     		press a number:
@@ -1603,15 +1740,20 @@ public static void chat(){
 		switch(select){
 		case 0:
 		settings();
-		}
+	default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 		break;
 
 		case 0: settings();
 
-		}
+	default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 	break;
-	
+
 	case 3:
+do{
 	System.out.println("Security settings");
 
 		message = """
@@ -1631,6 +1773,7 @@ public static void chat(){
 		switch(select){
 	
 		case 1:
+do{
 		System.out.println("PIN code request");
 		message = """
     		press a number:
@@ -1644,10 +1787,13 @@ public static void chat(){
 		switch(select){
 		case 0:
 		settings();
-		}
+	default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 		break;
 	
 		case 2:
+do{
 		System.out.println("Call barring service");
 		message = """
     		press a number:
@@ -1661,10 +1807,13 @@ public static void chat(){
 		switch(select){
 		case 0:
 		settings();
-		}
+	default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 		break;
 	
 		case 3:
+do{
 		System.out.println("Fixed dialling");
 		message = """
     		press a number:
@@ -1678,10 +1827,13 @@ public static void chat(){
 		switch(select){
 		case 0:
 		settings();
-		}
+	default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 		break;
 	
 		case 4:
+do{
 		System.out.println("Closed user group");
 		message = """
     		press a number:
@@ -1695,10 +1847,13 @@ public static void chat(){
 		switch(select){
 		case 0:
 		settings();
-		}
+	default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 		break;
 
 		case 5:
+do{
 		System.out.println("Phone security");
 		message = """
     		press a number:
@@ -1712,10 +1867,13 @@ public static void chat(){
 		switch(select){
 		case 0:
 		settings();
-		}
+default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 		break;
 
 		case 6:
+do{
 		System.out.println("Change access codes");
 		message = """
     		press a number:
@@ -1729,14 +1887,19 @@ public static void chat(){
 		switch(select){
 		case 0:
 		settings();
-		}
+default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 		break;
 	
 		case 0: settings();
-		}
+	default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 	break;
-	
+
 	case 4:
+do{
 	System.out.println("Restore factory settings");
 	message = """
     	press a number:
@@ -1750,22 +1913,24 @@ public static void chat(){
 	switch(select){
 	case 0:
 	settings();
-	}
-
-
-	break;
+	default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 
 	case 0:
 	menu();
 	
-	break;
-	}
+	default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 
  
 }
 
 //----------------------------------------------------------------------------------------------------------------------------------------------------------
  public static void callDivert(){
+int select = 0;
+do{
  System.out.println("Welcome to Call divert");
   
  	String message = """
@@ -1774,18 +1939,21 @@ public static void chat(){
 	0: Return to main menu
 	""";
 	System.out.println(message);
-	int select = input.nextInt();
+	select = input.nextInt();
 
 	switch(select){
 	case 0:
 	menu();
- break;
-	}
+default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 
 
 }
 //-----------------------------------------------------------------------------------------------------------------------------------------------------
  public static void games(){
+int select = 0;
+do{
  System.out.println("Welcome to Games");
   
  	String message = """
@@ -1794,19 +1962,22 @@ public static void chat(){
 	0: Return to main menu
 	""";
 	System.out.println(message);
-	int select = input.nextInt();
+	select = input.nextInt();
 
 	switch(select){
 	case 0:
 	menu();
 
- break;
-	}
+default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 
 }
 
 //---------------------------------------------------------------------------------------------------------------------------------------------------
  public static void calculator(){
+int select = 0;
+do{
  System.out.println("Welcome to Calculator");
   
  	String message = """
@@ -1815,19 +1986,22 @@ public static void chat(){
 	0: Return to main menu
 	""";
 	System.out.println(message);
-	int select = input.nextInt();
+	select = input.nextInt();
 
 	switch(select){
 	case 0:
 	menu();
- break;
-	}
+default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 
 }
 
 //-------------------------------------------------------------------------------------------------------------------------------------------
 
  public static void remainders(){
+int select = 0;
+do{
  System.out.println("Welcome to Remainders");
   
  	String message = """
@@ -1836,18 +2010,21 @@ public static void chat(){
 	0: Return to main menu
 	""";
 	System.out.println(message);
-	int select = input.nextInt();
+	select = input.nextInt();
 
 	switch(select){
 	case 0:
 	menu();
- break;
-	}
+default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 
 }
 
 //------------------------------------------------------------------------------------------------------------------------------------------------
  public static void clock(){
+int select = 0;
+do{
  System.out.println("Welcome to Clock");
 
 	String message = """
@@ -1863,11 +2040,12 @@ public static void chat(){
 
 	""";
 	System.out.println(message);
-	int select = input.nextInt();
+	select = input.nextInt();
 
 	switch(select){
 	
 	case 1:
+do{
 	System.out.println("Alarm clock");
 		message = """
     		press a number:
@@ -1881,10 +2059,15 @@ public static void chat(){
 		switch(select){
 		case 0:
 		clock();
-		}
+		
+default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 	break;
 	
+
 	case 2:
+do{
 	System.out.println("Clock settings");
 		message = """
     		press a number:
@@ -1898,10 +2081,14 @@ public static void chat(){
 		switch(select){
 		case 0:
 		clock();
-		}
+		
+default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 	break;
 	
 	case 3:
+do{
 	System.out.println("Date settings");
 		message = """
     		press a number:
@@ -1915,10 +2102,14 @@ public static void chat(){
 		switch(select){
 		case 0:
 		clock();
-		}
+		
+default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 	break;
 	
 	case 4:
+do{
 	System.out.println("Stopwatch");
 		message = """
     		press a number:
@@ -1932,10 +2123,14 @@ public static void chat(){
 		switch(select){
 		case 0:
 		clock();
-		}
+		
+default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 	break;
 
 	case 5:
+do{
 	System.out.println("Countdown timer");
 		message = """
     		press a number:
@@ -1949,10 +2144,14 @@ public static void chat(){
 		switch(select){
 		case 0:
 		clock();
-		}
+		
+default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 	break;
 
 	case 6:
+do{
 	System.out.println("Auto update of date and time");
 		message = """
     		press a number:
@@ -1966,19 +2165,25 @@ public static void chat(){
 		switch(select){
 		case 0:
 		clock();
-		}
+		
+default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 	break;
 
 	case 0:
 	menu();
- break;
-	}
+default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 
 }
 
 
 //------------------------------------------------------------------------------------------------------------------------------------
 public static void profiles(){
+int select = 0;
+do{
  System.out.println("Welcome to Profile");
  
  	String message = """
@@ -1987,18 +2192,21 @@ public static void profiles(){
 	0: Return to main menu
 	""";
 	System.out.println(message);
-	int select = input.nextInt();
+	select = input.nextInt();
 
 	switch(select){
 	case 0:
 	menu();
- break;
-	}
+ default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 
 }
 
 //------------------------------------------------------------------------------------------------------------------------------------
 public static void simService(){
+int select = 0;
+do{
  System.out.println("Welcome to SIM service");
  
  	String message = """
@@ -2007,13 +2215,14 @@ public static void simService(){
 	0: Return to main menu
 	""";
 	System.out.println(message);
-	int select = input.nextInt();
+	select = input.nextInt();
 
 	switch(select){
 	case 0:
 	menu();
- break;
-	}
+default: System.out.println("Invalid - Try again");
+ }
+}while(select != 0);
 
 
 }
@@ -2022,4 +2231,3 @@ public static void simService(){
 
 
 }
-
