@@ -19,6 +19,14 @@ for(int counter = 0; counter < number.length; counter++){
 System.out.println(number[counter]+" ");
 }
 
+System.out.println();
+
+int sum = 0;
+for(int counter = 0; counter < number.length; counter++){
+sum = sum + number[counter];
+}
+System.out.println("Total is = "+sum);
+
 
 }
 }
