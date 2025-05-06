@@ -1,0 +1,105 @@
+public class Arraysss{
+
+public static int maximumIn(int [] array){
+int max = array[0];
+for(int i = 1; i < array.length; i++){
+if(array[i] > max) max = array[i];
+}
+return max;
+}
+
+
+public static int smallestIn(int [] array){
+int min = array[0];
+for(int i = 1; i < array.length; i++){
+if(array[i] < min) min = array[i];
+}
+return min;
+
+}
+
+
+public static int sumOf(int [] array){
+int total = 0;
+for(int i = 0; i < array.length; i++){
+total += array[i];
+}
+return total;
+
+}
+
+
+public static int sumOfEvenNumbersIn(int [] array){
+int evenNum = 0;
+for(int i = 0; i < array.length; i++){
+if(array[i] % 2 == 0)evenNum += array[i];
+}
+return evenNum;
+
+}
+
+
+public static int sumOfOddNumbersIn(int [] array){
+int oddNum = 0;
+for(int i = 0; i < array.length; i++){
+if(array[i] % 2 != 0)oddNum += array[i];
+}
+return oddNum;
+
+}
+
+
+public static String maximumAndMinimumOf(int [] array){
+int max = array[0];
+int min = array[0];
+for(int i = 0; i < array.length; i++){
+if(array[i] > max) max = array[i];
+if(array[i] < min) min = array[i];
+}
+String total = "The minimun is "+min+" and the maximum is "+max;
+return total;
+}
+
+
+public static int noOfOddNumbersIn(int [] array){
+int oddNum = 0;
+int count = 0;
+for(int i = 0; i < array.length; i++){
+if(array[i] % 2 != 0)count++;
+}
+return count;
+
+}
+
+
+public static int noOfEvenNumbersIn(int [] array){
+int evenNum = 0;
+int count = 0;
+for(int i = 0; i < array.length; i++){
+if(array[i] % 2 == 0)count++;
+}
+return count;
+
+}
+
+
+public static void squareNumbersIn(int [] array){
+for(int i = 0; i < array.length; i++){
+int total = (int)Math.sqrt (array[0]);
+System.out.print(total+" ");
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}
