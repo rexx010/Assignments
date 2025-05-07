@@ -83,12 +83,13 @@ return count;
 }
 
 
-public static void squareNumbersIn(int [] array){
-for(int i = 0; i < array.length; i++){
-int total = (int)Math.sqrt (array[0]);
-System.out.print(total+" ");
-
-}
+public static int[] squareNumbersIn(int [] array){
+	int total=0;
+	int [] square = new int[array.length];
+	for(int i = 0; i < array.length; i++){
+		square[i] = array[i] * array[i];
+	}
+	return square;
 }
 
 
