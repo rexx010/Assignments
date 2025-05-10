@@ -82,6 +82,17 @@ return count;
 
 }
 
+/*
+public static int oddNumbersIn(int [] array){
+int oddNum = 0;
+for(int i = 0; i < array.length; i++){
+if(array[i] % 2 != 0)oddNum += array[i];
+}
+return oddNum;
+
+}
+*/
+
 
 public static int[] squareNumbersIn(int [] array){
 	int total=0;
@@ -94,8 +105,45 @@ public static int[] squareNumbersIn(int [] array){
 
 
 
+public static int[] evenNumbersIn(int [] array){
+
+int count = 0;
+for(int i = 0; i < array.length; i++){
+if(array[i] % 2 == 0) count++;
+}
+
+int[] even = new int [count];
+int j = 0;
+for(int i = 0; i< array.length; i++){
+if(array[i] % 2 == 0){
+even[j] = array[i];
+j++;
+}
+
+}
+return even;
+}
 
 
+
+public static int[] oddNumbersIns(int [] array){
+
+int count = 0;
+for(int i = 0; i < array.length; i++){
+if(array[i] % 2 != 0) count++;
+}
+
+int[] odd = new int [count];
+int j = 0;
+for(int i = 0; i< array.length; i++){
+if(array[i] % 2 != 0){
+odd[j] = array[i];
+j++;
+}
+
+}
+return odd;
+}
 
 
 
