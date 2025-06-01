@@ -14,6 +14,6 @@ public class ArrayColumnMAx{
 		if(min > value[count][j])min = value[count][j];
 	}
 	}
-System.out.print(min);
+System.out.print(min);  
 	}
 }
